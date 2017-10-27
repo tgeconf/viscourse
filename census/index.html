@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<title>Maryland Income and Population</title>
+<script src="jquery-2.2.4.min.js"></script>
+<script src="js/terraformer.min.js"></script>
+<script src="js/terraformer-arcgis-parser.min.js"></script>
+<script src="js/mapbox-gl.js"></script>
+<script src="citysdk.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.20.1/mapbox-gl.css">
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+<style>
+	@font-face {  
+	    /* font-properties */  
+	    font-family: HenryMorganHand;  
+	    src:url('font/HenryMorganHand.ttf');
+	}  
+	@font-face {  
+	    /* font-properties */  
+	    font-family: CaviarDreams;  
+	    src:url('font/CaviarDreams.ttf');
+	} 
+	@font-face {  
+	    /* font-properties */  
+	    font-family: Tugano;  
+	    src:url('font/Tugano.ttf');
+	} 
+	h1{
+		color: #555;
+	    font-size: 64px;
+	    font-weight: 200;
+	    letter-spacing: -2px;
+	    white-space: nowrap;
+	    margin-top: 20px;
+	}
+	h4{
+		font-size: 2em ! important;
+		font-family: "CaviarDreams";
+		margin-bottom: 1.2em;
+	}
+	select {
+	    padding:3px;
+	    margin: 0;
+	    -webkit-border-radius:4px;
+	    -moz-border-radius:4px;
+	    border-radius:4px;
+	    -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+	    -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+	    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+	    background: #f8f8f8;
+	    color:#888;
+	    border:none;
+	    outline:none;
+	    display: inline-block;
+	    -webkit-appearance:none;
+	    -moz-appearance:none;
+	    appearance:none;
+	    cursor:pointer;
+	    font-size: 1em;
+	}
+	.wrapper{
+		width: 80%;
+		height: 600px;
+		padding: 20px;
+		margin: auto;
+		margin-top:3em;
+		background:#fff;
+	}
+
+	#map-content {
+		float:left;
+		height: 600px;
+		width: 57%;
+	}
+
+	.text_wrapper{
+		float:left;
+		width: 43%;
+		height: 600px;
+		padding: 0px;
+		margin: 0px;
+		background:url("img/bg.png");
+		background-size: auto 100%;
+	}
+	.text_container{
+		float:left;
+		margin-top: 100px;
+		width: 90%;
+		padding-left: 5%;
+		height: 400px;
+		font-family: "arial";
+		font-size: 1.5em;
+		line-height: 1.6em;
+		font-weight: normal;
+		/*border-left: 1px solid #999;*/
+		
+
+	}
+
+	.effect7
+	{
+	  	position:relative;
+	    /*-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;*/
+	}
+	.effect7:before, .effect7:after
+	{
+		content:"";
+	    position:absolute;
+	    z-index:-1;
+	    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+	    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+	    box-shadow:0 0 20px rgba(0,0,0,0.8);
+	    top:0;
+	    bottom:0;
+	    left:10px;
+	    right:10px;
+	    -moz-border-radius:100px / 10px;
+	    border-radius:100px / 10px;
+	}
+	.effect7:after
+	{
+		right:10px;
+	    left:auto;
+	    -webkit-transform:skew(8deg) rotate(3deg);
+	       -moz-transform:skew(8deg) rotate(3deg);
+	        -ms-transform:skew(8deg) rotate(3deg);
+	         -o-transform:skew(8deg) rotate(3deg);
+	            transform:skew(8deg) rotate(3deg);
+	}
+</style>
+
+<div class="wrapper effect7">
+	<div class="container" id="map-content"></div>
+	<div class="text_wrapper">
+		<div class="text_container">
+			<h4>Living in America</h4>
+		    I am Peter, my job is 
+			<select>
+				<option value ="architect">architect</option>
+				<option value ="architect">architect</option>
+				<option value ="architect">architect</option>
+			</select>.
+			There are <font id="maleNum">0</font> males and <font id="femaleNum">0</font> females in this job in <font id="locationName">somewhere</font>. And <font id="population">0</font> people live here.
+		</div>
+	</div>
+</div>
+
+<script>
+
+
+	mapboxgl.accessToken = 'pk.eyJ1IjoidGdlIiwiYSI6ImNqOHlrdnRlNjJjMG4yeG41OGVhdmcxbHIifQ.sezg6CxNOC5u81hwmbnMLw';
+
+	var incomeCode = CitySdk.aliasToVariable('income').income.variable;
+    var m_archi_engin_code = CitySdk.aliasToVariable('employment_male_architecture_and_engineering_occupations').employment_male_architecture_and_engineering_occupations.variable;
+    var fm_archi_engin_code = CitySdk.aliasToVariable('employment_female_architecture_and_engineering_occupations').employment_female_architecture_and_engineering_occupations.variable;
+	var populationCode = CitySdk.aliasToVariable('population').population.variable;
+
+	var map = new mapboxgl.Map({
+		container: 'map-content',
+		style: 'mapbox://styles/mapbox/light-v9',
+		center: [-77.3, 38.9],
+		//center: [-75.789, 41.874],
+		zoom: 4
+	});
+
+	// var request = {
+	// 	level: 'state',
+	// 	state: 'ME',
+	// 	sublevel: true,
+	// 	variables: ['employment_male_architecture_and_engineering_occupations', 'employment_female_architecture_and_engineering_occupations', 'population'],
+	// 	apikey: '2e7213f0f767ffa7299171b87b961ce8e489e80a'
+	// };
+
+	// console.log("program in running");
+
+	// CitySdk.request(request).then(function(response) {
+	// 		console.log("in");
+	//         console.log(response);
+	//         console.log(JSON.stringify(response, null, 4));
+	// 	})
+	// 	.catch((error) => {
+	// 		console.log(error.message);
+	// 		throw new Error(error);
+	// 	});
+
+	var states = ["MD", "PA", "NJ", "DE", "NY", "CT", "RI", "MA", "VT", "NH", "ME"];
+	
+	map.on('load', function () {
+		// d3.json("data/RI.json", function(response){
+			map.addSource('cover', {type: 'image', url: "img/cover.png", coordinates: [  
+	                [-999.99, 89.999],  
+	                [999.99, 89.999],  
+	                [999.99, -89.999],  
+	                [-999.99, -89.999]  
+	            ]  });
+			
+			map.addLayer({
+				'id': 'cover',
+				'type': 'raster',
+				'source': 'cover',
+				"paint": {"raster-opacity": 1}  /* 透明度 */  
+			});
+
+			map.addSource('overlayMap', {type: 'image', url: "img/map_test.png", coordinates: [  
+		            // [-127.403, 48.04],  
+		            // [-67.214, 47.54],  
+		            // [-73.814, 24.269],  
+		            // [-120.803, 24.569] 
+		            [-123.803, 48.04],  
+		            [-68.814, 48.04],  
+		            [-68.814, 24.869],  
+		            [-123.803, 24.869]  
+		        ]  });
+			
+			map.addLayer({
+				'id': 'overlay',
+				'type': 'raster',
+				'source': 'overlayMap',
+				"paint": {"raster-opacity": 0.1}  /* 透明度 */  
+			});
+
+			setTimeout(showOneState(0), 2000);
+			setTimeout(showOneState(1), 4000);
+			setTimeout(showOneState(2), 6000);
+			setTimeout(showOneState(3), 8000);
+			setTimeout(showOneState(4), 10000);
+			setTimeout(showOneState(5), 12000);
+			setTimeout(showOneState(6), 14000);
+			setTimeout(showOneState(7), 16000);
+			setTimeout(showOneState(8), 18000);
+			setTimeout(showOneState(9), 20000);
+			setTimeout(showOneState(10), 22000);
+
+		// });	
+	});
+	
+
+
+
+	// 
+	// showOneState(0);
+	// showOneState(1);
+	// showOneState(2);
+	// showOneState(3);
+	// showOneState(4);
+	// showOneState(5);
+	// showOneState(6);
+	// showOneState(7);
+	// showOneState(8);
+	// showOneState(9);
+	// showOneState(10);
+
+	function showOneState(index){
+		d3.json("data/"+states[index]+".json", function(response){
+			// CitySdk.request(request).then(function(response) {
+			console.log("in");
+	        // console.log(response);
+	        // console.log(i);
+	        console.log(index);
+
+
+	        //center coordintes of each county
+	        var centerCoordinates = {};
+			centerCoordinates.type = "geojson";
+			centerCoordinates.data = {};
+			centerCoordinates.data.type = "FeatureCollection";
+			centerCoordinates.data.features = new Array();
+
+			//total number of Attr1(number of male in architecture)
+			var attr1Num = 0;
+			//total number of Attr2(number of female in architecture)
+			var attr2Num = 0;
+
+			var sumLat = 0;
+			var sumLon = 0;
+			for(var j = 0, len = response.features.length; j < len; j++){
+				var lat = parseFloat(response.features[j].properties.CENTLAT);
+				var lon = parseFloat(response.features[j].properties.CENTLON);
+				var tmpObj = {};
+				tmpObj.type = "Feature";
+				tmpObj.geometry = {};
+				tmpObj.geometry.type = "Point";
+				tmpObj.geometry.coordinates = [lon, lat];
+				centerCoordinates.data.features.push(tmpObj);
+
+				attr1Num += Number(response.features[j].properties[m_archi_engin_code]);
+				attr2Num += Number(response.features[j].properties[fm_archi_engin_code]);
+
+				sumLat += lat;
+				sumLon += lon;
+			}
+			var centerLat = sumLat/response.features.length;
+			var centerLon = sumLon/response.features.length;
+			var attrValue = [attr1Num, attr2Num];
+			var attrSum = attr1Num + attr2Num;
+
+			console.log("male:" + attr1Num + "; female:"+attr2Num + "; ");
+
+			//points for statistic data
+			var dataCoordinates1 = {};
+			dataCoordinates1.type = "geojson";
+			dataCoordinates1.data = {};
+			dataCoordinates1.data.type = "FeatureCollection";
+			dataCoordinates1.data.features = new Array();
+			var tmpObj1 = {};
+			tmpObj1.type = "Feature";
+			tmpObj1.geometry = {};
+			tmpObj1.geometry.type = "Point";
+			tmpObj1.geometry.coordinates = [centerLon+Math.random()*0.4-0.2, centerLat+Math.random()*0.4-0.2];
+			dataCoordinates1.data.features.push(tmpObj1);
+
+			var dataCoordinates2 = {};
+			dataCoordinates2.type = "geojson";
+			dataCoordinates2.data = {};
+			dataCoordinates2.data.type = "FeatureCollection";
+			dataCoordinates2.data.features = new Array();
+			var tmpObj2 = {};
+			tmpObj2.type = "Feature";
+			tmpObj2.geometry = {};
+			tmpObj2.geometry.type = "Point";
+			tmpObj2.geometry.coordinates = [centerLon+Math.random()*0.4-0.2, centerLat+Math.random()*0.4-0.2];
+			dataCoordinates2.data.features.push(tmpObj2);
+
+			map.addSource("center-coordinates"+index, {type: 'geojson', data: centerCoordinates.data});
+			map.addSource("data-coordinates1"+index, {type: 'geojson', data: dataCoordinates1.data});
+			map.addSource("data-coordinates2"+index, {type: 'geojson', data: dataCoordinates2.data});
+			map.addSource('Popu'+index, {type: 'geojson', data: response});
+
+			map.addLayer({
+				'id': 'counties-fill'+index,
+				'type': 'fill',
+				'source': 'Popu'+index,
+				'paint': {
+					'fill-color': 'rgba(117,117,117,0)'
+				}
+			});
+			map.addLayer({
+				'id': 'counties-outline'+index,
+				'type': 'line',
+				'source': 'Popu'+index,
+				'paint': {
+					'line-color': 'rgba(117,117,117,0)',
+					'line-width': 2
+				}
+			});
+			map.addLayer({
+				'id': 'route-hover'+index,
+				'type': 'fill',
+				'source': 'Popu'+index,
+				'layout': {},
+				'paint': {
+					'fill-color': 'rgba(117,117,117,0.3)'
+				},
+				'filter': ['==', 'name', '']
+			});
+
+		 	var color1 = ["#a6ceee", "#f19695"];//for the circle stroke and core
+		 	var color2 = ["#e0edf9", "#fbe3e3"];//for the circle stroke and core
+
+			for(let j = 0; j < 2; j++){//2 kind of attributes, male and female
+				var r1 = Math.log(10 * attrValue[j]/attrSum)*3 + 3;
+				var r2 = Math.log(8 * attrValue[j]/attrSum)*3 + 3;
+				var r3 = 3;
+
+				map.addLayer({  
+			        "id": "data-center1"+index+j,  
+			        "type": "circle",          /* circle类型表示一个圆，一般比较小 */  
+			        "source": "data-coordinates"+(j+1)+index,  
+			        "paint": {  
+			            "circle-radius": r1,        /* 圆的直径，单位像素 */  
+			            "circle-color": color1[j]  /* 圆的颜色 */  
+			        },  
+			        "filter": ["==", "$type", "Point"], /* filter过滤器将type等于Point的数据显示在layer上 */  
+				});
+				map.addLayer({  
+			        "id": "data-center2"+index+j,  
+			        "type": "circle",
+			        "source": "data-coordinates"+(j+1)+index,  
+			        "paint": {  
+			            "circle-radius": r2,
+			            "circle-color": color2[j]
+			        },  
+			        "filter": ["==", "$type", "Point"],
+				});
+				map.addLayer({  
+			        "id": "data-center3"+index+j,  
+			        "type": "circle",
+			        "source": "data-coordinates"+(j+1)+index,  
+			        "paint": {  
+			            "circle-radius": r3,
+			            "circle-color": color1[j]
+			        },  
+			        "filter": ["==", "$type", "Point"],
+				}); 
+			}
+
+			var popupTpl = '<h4>${county}</h4>'
+				+ '<div class="panel panel-default">'
+				+ '<table class="table table-bordered">'
+				+ '<tr><td>Male in architecture and engineering</td><td>${employment_male_architecture_and_engineering_occupations}</td></tr>'
+				+ '<tr><td>Feale in architecture and engineering</td><td>${employment_female_architecture_and_engineering_occupations}</td></tr>'
+				+ '<tr><td>Population</td><td>${population}</td></tr>'
+				+ '</table>'
+				+ '</div>';
+
+
+
+			map.on('mousemove', function(e) {
+				map.getCanvas().style.cursor = 'pointer';
+
+				var features = map.queryRenderedFeatures(e.point, {layers: ['counties-fill'+index]});
+
+				if (features.length) {
+					map.setFilter('route-hover'+index, ['==', 'name', features[0].properties.name]);
+				} else {
+					map.setFilter('route-hover'+index, ['==', 'name', '']);
+				}
+			});
+
+			map.on('click', function(e) {
+				var features = map.queryRenderedFeatures(e.point, {layers: ['counties-fill'+index]});
+				if (!features.length) {
+					return;
+				}
+
+				var feature = features[0];
+
+				var popupContent = popupTpl.replace(/\$\{\w+\}/g, function(match) {
+					switch (match) {
+						case '${county}':
+						return feature.properties.NAME;
+						case '${employment_male_architecture_and_engineering_occupations}':
+						return Number(feature.properties[m_archi_engin_code]).toLocaleString();
+						case '${employment_female_architecture_and_engineering_occupations}':
+						return Number(feature.properties[fm_archi_engin_code]).toLocaleString();
+						case '${population}':
+						return Number(feature.properties[populationCode]).toLocaleString();
+					}
+				});
+
+				new mapboxgl.Popup()
+					.setLngLat(map.unproject(e.point))
+					.setHTML(popupContent)
+					.addTo(map);
+
+				document.getElementById("maleNum").innerHTML = Number(feature.properties[m_archi_engin_code]).toLocaleString();
+				document.getElementById("femaleNum").innerHTML = Number(feature.properties[fm_archi_engin_code]).toLocaleString();
+				document.getElementById("locationName").innerHTML = feature.properties.NAME;
+				document.getElementById("population").innerHTML = Number(feature.properties[populationCode]).toLocaleString();
+			});
+
+		})
+	}
+
+
+
+	// d3.json("occupation_data.json", function(data){
+	// 	console.log(data);
+	// 	//get all center coordinates
+	// 	var centerCoordinates = {};
+	// 	centerCoordinates.type = "geojson";
+	// 	centerCoordinates.data = {};
+	// 	centerCoordinates.data.type = "FeatureCollection";
+	// 	centerCoordinates.data.features = new Array();
+	// 	for(var i = 0, len = data.features.length; i < len; i++){
+	// 		var lat = parseFloat(data.features[i].properties.CENTLAT);
+	// 		var lon = parseFloat(data.features[i].properties.CENTLON);
+	// 		var tmpObj = {};
+	// 		tmpObj.type = "Feature";
+	// 		tmpObj.geometry = {};
+	// 		tmpObj.geometry.type = "Point";
+	// 		tmpObj.geometry.coordinates = [lon, lat];
+	// 		centerCoordinates.data.features.push(tmpObj);
+	// 	}
+
+	// 	console.log(centerCoordinates);
+
+	// 	map.addSource('incomePop', {type: 'geojson', data: data});
+	// 	map.addSource('cover', {type: 'image', url: "img/cover.png", coordinates: [  
+ //                [-999.99, 89.999],  
+ //                [999.99, 89.999],  
+ //                [999.99, -89.999],  
+ //                [-999.99, -89.999]  
+ //            ]  });
+	// 	map.addSource('overlay', {type: 'image', url: "img/map_test.png", coordinates: [  
+ //                [-127.403, 48.04],  
+ //                [-67.214, 47.54],  
+ //                [-73.814, 24.269],  
+ //                [-120.803, 24.569]  
+ //            ]  });
+	// 	map.addSource("center-coordinates", {type: 'geojson', data: centerCoordinates.data});
+
+	// 	// map.addLayer({
+	// 	// 	'id': 'cover',
+	// 	// 	'type': 'raster',
+	// 	// 	'source': 'cover',
+	// 	// 	"paint": {"raster-opacity": 0.1}  /* 透明度 */  
+	// 	// });
+
+	// 	map.addLayer({
+	// 		'id': 'overlay',
+	// 		'type': 'raster',
+	// 		'source': 'overlay',
+	// 		"paint": {"raster-opacity": 0.55}  /* 透明度 */  
+	// 	});
+
+	// 	map.addLayer({
+	// 		'id': 'counties-fill',
+	// 		'type': 'fill',
+	// 		'source': 'incomePop',
+	// 		'paint': {
+	// 			'fill-color': 'rgba(117,117,117,0.2)'
+	// 		}
+	// 	});
+
+	// 	map.addLayer({
+	// 		'id': 'counties-outline',
+	// 		'type': 'line',
+	// 		'source': 'incomePop',
+	// 		'paint': {
+	// 			'line-color': 'rgba(117,117,117,0.6)',
+	// 			'line-width': 2
+	// 		}
+	// 	});
+
+	// 	map.addLayer({
+	// 		'id': 'route-hover',
+	// 		'type': 'fill',
+	// 		'source': 'incomePop',
+	// 		'layout': {},
+	// 		'paint': {
+	// 			'fill-color': 'rgba(117,117,117,0.6)'
+	// 		},
+	// 		'filter': ['==', 'name', '']
+	// 	});
+
+	// 	map.addLayer({  
+	//         "id": "state-center",  
+	//         "type": "circle",          /* circle类型表示一个圆，一般比较小 */  
+	//         "source": "center-coordinates",  
+	//         "paint": {  
+	//             "circle-radius": 6,        /* 圆的直径，单位像素 */  
+	//             "circle-color": "#B42222"  /* 圆的颜色 */  
+	//         },  
+	//         "filter": ["==", "$type", "Point"], /* filter过滤器将type等于Point的数据显示在layer上 */  
+	//     });  
+
+
+	// 	var popupTpl = '<h4>${county}</h4>'
+	// 		+ '<div class="panel panel-default">'
+	// 		+ '<table class="table table-bordered">'
+	// 		+ '<tr><td>Male occupaion</td><td>${employment_male_architecture_and_engineering_occupations}</td></tr>'
+	// 		+ '<tr><td>Female occupaion</td><td>${employment_female_architecture_and_engineering_occupations}</td></tr>'
+	// 		+ '<tr><td>Population</td><td>${population}</td></tr>'
+	// 		+ '</table>'
+	// 		+ '</div>';
+
+
+
+	// 	map.on('mousemove', function(e) {
+	// 		map.getCanvas().style.cursor = 'pointer';
+
+	// 		var features = map.queryRenderedFeatures(e.point, {layers: ['counties-fill']});
+
+	// 		if (features.length) {
+	// 			map.setFilter('route-hover', ['==', 'name', features[0].properties.name]);
+	// 		} else {
+	// 			map.setFilter('route-hover', ['==', 'name', '']);
+	// 		}
+	// 	});
+
+	// 	map.on('click', function(e) {
+	// 		var features = map.queryRenderedFeatures(e.point, {layers: ['counties-fill']});
+	// 		if (!features.length) {
+	// 			return;
+	// 		}
+
+	// 		var feature = features[0];
+
+	// 		var popupContent = popupTpl.replace(/\$\{\w+\}/g, function(match) {
+	// 			switch (match) {
+	// 				case '${county}':
+	// 					return feature.properties.NAME;
+	// 				case '${employment_male_architecture_and_engineering_occupations}':
+	// 					return Number(feature.properties[m_archi_engin_code]).toLocaleString();
+	// 				case '${employment_female_architecture_and_engineering_occupations}':
+	// 					return Number(feature.properties[fm_archi_engin_code]).toLocaleString();
+	// 				case '${population}':
+	// 					return Number(feature.properties[populationCode]).toLocaleString();
+	// 			}
+	// 		});
+
+	// 		// new mapboxgl.Popup()
+	// 		// 	.setLngLat(map.unproject(e.point))
+	// 		// 	.setHTML(popupContent)
+	// 		// 	.addTo(map);
+
+	// 		//update text
+	// 		document.getElementById("maleNum").innerHTML = Number(feature.properties[m_archi_engin_code]).toLocaleString();
+	// 		document.getElementById("femaleNum").innerHTML = Number(feature.properties[fm_archi_engin_code]).toLocaleString();
+	// 		document.getElementById("locationName").innerHTML = feature.properties.NAME;
+	// 		document.getElementById("population").innerHTML = Number(feature.properties[populationCode]).toLocaleString();
+	// 	});
+	// })
+
+</script>
+
+
