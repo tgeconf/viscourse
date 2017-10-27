@@ -160,9 +160,9 @@
 	var map = new mapboxgl.Map({
 		container: 'map-content',
 		style: 'mapbox://styles/mapbox/light-v9',
-		center: [-77.3, 38.9],
+		center: [-77.3, 41.9],
 		//center: [-75.789, 41.874],
-		zoom: 4
+		zoom: 5
 	});
 
 	// var request = {
@@ -308,7 +308,7 @@
 			tmpObj1.type = "Feature";
 			tmpObj1.geometry = {};
 			tmpObj1.geometry.type = "Point";
-			tmpObj1.geometry.coordinates = [centerLon+Math.random()*0.4-0.2, centerLat+Math.random()*0.4-0.2];
+			tmpObj1.geometry.coordinates = [centerLon+Math.random()*0.8-0.4, centerLat+Math.random()*0.8-0.4];
 			dataCoordinates1.data.features.push(tmpObj1);
 
 			var dataCoordinates2 = {};
@@ -320,7 +320,7 @@
 			tmpObj2.type = "Feature";
 			tmpObj2.geometry = {};
 			tmpObj2.geometry.type = "Point";
-			tmpObj2.geometry.coordinates = [centerLon+Math.random()*0.4-0.2, centerLat+Math.random()*0.4-0.2];
+			tmpObj2.geometry.coordinates = [centerLon+Math.random()*0.8-0.4, centerLat+Math.random()*0.8-0.4];
 			dataCoordinates2.data.features.push(tmpObj2);
 
 			map.addSource("center-coordinates"+index, {type: 'geojson', data: centerCoordinates.data});
@@ -360,9 +360,9 @@
 		 	var color2 = ["#e0edf9", "#fbe3e3"];//for the circle stroke and core
 
 			for(let j = 0; j < 2; j++){//2 kind of attributes, male and female
-				var r1 = Math.log(10 * attrValue[j]/attrSum)*3 + 3;
-				var r2 = Math.log(8 * attrValue[j]/attrSum)*3 + 3;
-				var r3 = 3;
+				var r1 = Math.log(100 * attrValue[j]/attrSum)*5 + 3;
+				var r2 = Math.log(88 * attrValue[j]/attrSum)*5 + 3;
+				var r3 = 5;
 
 				map.addLayer({  
 			        "id": "data-center1"+index+j,  
