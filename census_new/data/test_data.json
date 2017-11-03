@@ -1,0 +1,24 @@
+[
+	{
+		"name":"NY",
+		"population":100,
+		"jobs":[
+			{"jobName":"job1","occupationNum":10},
+			{"jobName":"job2","occupationNum":10},
+			{"jobName":"job3","occupationNum":10},
+			{"jobName":"job4","occupationNum":10},
+			{"jobName":"job5","occupationNum":10}
+		]
+	},
+	{
+		"name":"PA",
+		"population":100,
+		"jobs":[
+			{"jobName":"job1","occupationNum":10},
+			{"jobName":"job2","occupationNum":10},
+			{"jobName":"job3","occupationNum":10},
+			{"jobName":"job4","occupationNum":10},
+			{"jobName":"job5","occupationNum":10}
+		]
+	}
+]

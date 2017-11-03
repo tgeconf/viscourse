@@ -1,0 +1,1776 @@
+[
+	{
+		"name":"CT",
+		"population":3590886,
+		"counties":[
+			{
+				"name" : "Hartford County, Connecticut",
+				"occupation" : [
+					{"gender":"male","occupationNum":38823},
+					{"gender":"female","occupationNum":32969}
+				]
+			},
+			{
+				"name" : "Litchfield County, Connecticut",
+				"occupation" : [
+					{"gender":"male","occupationNum":8437},
+					{"gender":"female","occupationNum":6966}
+				]
+			},
+			{
+				"name" : "Middlesex County, Connecticut",
+				"occupation" : [
+					{"gender":"male","occupationNum":9257},
+					{"gender":"female","occupationNum":6813}
+				]
+			},
+			{
+				"name" : "New London County, Connecticut",
+				"occupation" : [
+					{"gender":"male","occupationNum":9895},
+					{"gender":"female","occupationNum":7959}
+				]
+			},
+			{
+				"name" : "Fairfield County, Connecticut",
+				"occupation" : [
+					{"gender":"male","occupationNum":57676},
+					{"gender":"female","occupationNum":35191}
+				]
+			},
+			{
+				"name" : "Tolland County, Connecticut",
+				"occupation" : [
+					{"gender":"male","occupationNum":6829},
+					{"gender":"female","occupationNum":5460}
+				]
+			},
+			{
+				"name" : "New Haven County, Connecticut",
+				"occupation" : [
+					{"gender":"male","occupationNum":31518},
+					{"gender":"female","occupationNum":25333}
+				]
+			},
+			{
+				"name" : "Windham County, Connecticut",
+				"occupation" : [
+					{"gender":"male","occupationNum":3678},
+					{"gender":"female","occupationNum":2804}
+				]
+			}
+		]
+	},
+	{
+		"name":"DE",
+		"population":945934,
+		"counties":[
+			{
+				"name" : "New Castle County, Delaware",
+				"occupation" : [
+					{"gender":"male","occupationNum":23518},
+					{"gender":"female","occupationNum":21869}
+				]
+			},
+			{
+				"name" : "Kent County, Delaware",
+				"occupation" : [
+					{"gender":"male","occupationNum":4892},
+					{"gender":"female","occupationNum":4919}
+				]
+			},
+			{
+				"name" : "Sussex County, Delaware",
+				"occupation" : [
+					{"gender":"male","occupationNum":5836},
+					{"gender":"female","occupationNum":4682}
+				]
+			}
+		]
+	},
+	{
+		"name":"MA",
+		"population":6640000,
+		"counties":[
+			{
+			    "name":"Franklin County, Massachusetts",
+			    "occupation":[
+			        {"gender":"male","occupationNum":2712},
+			        {"gender":"female","occupationNum":2578}
+			    ]
+			},
+			{
+			    "name":"Hampshire County, Massachusetts",
+			    "occupation":[
+			        {"gender":"male","occupationNum":5155},
+			        {"gender":"female","occupationNum":5648}
+			    ]
+			},
+			{
+			    "name":"Bristol County, Massachusetts",
+			    "occupation":[
+			        {"gender":"male","occupationNum":18157},
+			        {"gender":"female","occupationNum":16361}
+			    ]
+			},
+			{
+			    "name":"Norfolk County, Massachusetts",
+			    "occupation":[
+			        {"gender":"male","occupationNum":41326},
+			        {"gender":"female","occupationNum":34608}
+			    ]
+			},
+			{
+			    "name":"Worcester County, Massachusetts",
+			    "occupation":[
+			        {"gender":"male","occupationNum":33580},
+			        {"gender":"female","occupationNum":27144}
+			    ]
+			},
+			{
+			    "name":"Barnstable County, Massachusetts",
+			    "occupation":[
+			        {"gender":"male","occupationNum":7407},
+			        {"gender":"female","occupationNum":6635}
+			    ]
+			},
+			{
+			    "name":"Suffolk County, Massachusetts",
+			    "occupation":[
+			        {"gender":"male","occupationNum":34757},
+			        {"gender":"female","occupationNum":33415}
+			    ]
+			},
+			{
+			    "name":"Essex County, Massachusetts",
+			    "occupation":[
+			        {"gender":"male","occupationNum":34582},
+			        {"gender":"female","occupationNum":28682}
+			    ]
+			},
+			{
+			    "name":"Plymouth County, Massachusetts",
+			    "occupation":[
+			        {"gender":"male","occupationNum":22579},
+			        {"gender":"female","occupationNum":17674}
+			    ]
+			},
+			{
+			    "name":"Berkshire County, Massachusetts",
+			    "occupation":[
+			        {"gender":"male","occupationNum":4365},
+			        {"gender":"female","occupationNum":3411}
+			    ]
+			},
+			{
+			    "name":"Dukes County, Massachusetts",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1189},
+			        {"gender":"female","occupationNum":496}
+			    ]
+			},
+			{
+			    "name":"Hampden County, Massachusetts",
+			    "occupation":[
+			        {"gender":"male","occupationNum":13182},
+			        {"gender":"female","occupationNum":12076}
+			    ]
+			},
+			{
+			    "name":"Middlesex County, Massachusetts",
+			    "occupation":[
+			        {"gender":"male","occupationNum":88994},
+			        {"gender":"female","occupationNum":72234}
+			    ]
+			},
+			{
+			    "name":"Nantucket County, Massachusetts",
+			    "occupation":[
+			        {"gender":"male","occupationNum":320},
+			        {"gender":"female","occupationNum":352}
+			    ]
+			}
+		]
+	},
+	{
+		"name":"MD",
+		"population":5773000,
+		"counties":[
+			{
+			    "name":"Calvert County, Maryland",
+			    "occupation":[
+			        {"gender":"male","occupationNum":4518},
+			        {"gender":"female","occupationNum":3787}
+			    ]
+			},
+			{
+			    "name":"Worcester County, Maryland",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1908},
+			        {"gender":"female","occupationNum":1581}
+			    ]
+			},
+			{
+			    "name":"Montgomery County, Maryland",
+			    "occupation":[
+			        {"gender":"male","occupationNum":60740},
+			        {"gender":"female","occupationNum":55945}
+			    ]
+			},
+			{
+			    "name":"Harford County, Maryland",
+			    "occupation":[
+			        {"gender":"male","occupationNum":12366},
+			        {"gender":"female","occupationNum":9506}
+			    ]
+			},
+			{
+			    "name":"Charles County, Maryland",
+			    "occupation":[
+			        {"gender":"male","occupationNum":6341},
+			        {"gender":"female","occupationNum":8184}
+			    ]
+			},
+			{
+			    "name":"Washington County, Maryland",
+			    "occupation":[
+			        {"gender":"male","occupationNum":4714},
+			        {"gender":"female","occupationNum":4465}
+			    ]
+			},
+			{
+			    "name":"Frederick County, Maryland",
+			    "occupation":[
+			        {"gender":"male","occupationNum":13833},
+			        {"gender":"female","occupationNum":10588}
+			    ]
+			},
+			{
+			    "name":"Baltimore County, Maryland",
+			    "occupation":[
+			        {"gender":"male","occupationNum":35478},
+			        {"gender":"female","occupationNum":32966}
+			    ]
+			},
+			{
+			    "name":"Wicomico County, Maryland",
+			    "occupation":[
+			        {"gender":"male","occupationNum":2879},
+			        {"gender":"female","occupationNum":3169}
+			    ]
+			},
+			{
+			    "name":"Garrett County, Maryland",
+			    "occupation":[
+			        {"gender":"male","occupationNum":873},
+			        {"gender":"female","occupationNum":966}
+			    ]
+			},
+			{
+			    "name":"Allegany County, Maryland",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1482},
+			        {"gender":"female","occupationNum":1348}
+			    ]
+			},
+			{
+			    "name":"Caroline County, Maryland",
+			    "occupation":[
+			        {"gender":"male","occupationNum":961},
+			        {"gender":"female","occupationNum":691}
+			    ]
+			},
+			{
+			    "name":"St. Mary's County, Maryland",
+			    "occupation":[
+			        {"gender":"male","occupationNum":5203},
+			        {"gender":"female","occupationNum":3633}
+			    ]
+			},
+			{
+			    "name":"Baltimore city, Maryland",
+			    "occupation":[
+			        {"gender":"male","occupationNum":16219},
+			        {"gender":"female","occupationNum":18171}
+			    ]
+			},
+			{
+			    "name":"Kent County, Maryland",
+			    "occupation":[
+			        {"gender":"male","occupationNum":656},
+			        {"gender":"female","occupationNum":843}
+			    ]
+			},
+			{
+			    "name":"Queen Anne's County, Maryland",
+			    "occupation":[
+			        {"gender":"male","occupationNum":2619},
+			        {"gender":"female","occupationNum":1943}
+			    ]
+			},
+			{
+			    "name":"Dorchester County, Maryland",
+			    "occupation":[
+			        {"gender":"male","occupationNum":820},
+			        {"gender":"female","occupationNum":826}
+			    ]
+			},
+			{
+			    "name":"Anne Arundel County, Maryland",
+			    "occupation":[
+			        {"gender":"male","occupationNum":29991},
+			        {"gender":"female","occupationNum":25850}
+			    ]
+			},
+			{
+			    "name":"Somerset County, Maryland",
+			    "occupation":[
+			        {"gender":"male","occupationNum":573},
+			        {"gender":"female","occupationNum":320}
+			    ]
+			},
+			{
+			    "name":"Carroll County, Maryland",
+			    "occupation":[
+			        {"gender":"male","occupationNum":9762},
+			        {"gender":"female","occupationNum":7696}
+			    ]
+			},
+			{
+			    "name":"Howard County, Maryland",
+			    "occupation":[
+			        {"gender":"male","occupationNum":20741},
+			        {"gender":"female","occupationNum":16431}
+			    ]
+			},
+			{
+			    "name":"Prince George's County, Maryland",
+			    "occupation":[
+			        {"gender":"male","occupationNum":28459},
+			        {"gender":"female","occupationNum":43543}
+			    ]
+			},
+			{
+			    "name":"Cecil County, Maryland",
+			    "occupation":[
+			        {"gender":"male","occupationNum":3327},
+			        {"gender":"female","occupationNum":3154}
+			    ]
+			},
+			{
+			    "name":"Talbot County, Maryland",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1608},
+			        {"gender":"female","occupationNum":1163}
+			    ]
+			}
+		]
+	},
+	{
+		"name":"ME",
+		"population":1270000,
+		"counties":[
+			{
+			    "name":"Knox County, Maine",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1422},
+			        {"gender":"female","occupationNum":1027}
+			    ]
+			},
+			{
+			    "name":"Aroostook County, Maine",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1785},
+			        {"gender":"female","occupationNum":1444}
+			    ]
+			},
+			{
+			    "name":"Androscoggin County, Maine",
+			    "occupation":[
+			        {"gender":"male","occupationNum":3311},
+			        {"gender":"female","occupationNum":2846}
+			    ]
+			},
+			{
+			    "name":"Kennebec County, Maine",
+			    "occupation":[
+			        {"gender":"male","occupationNum":3942},
+			        {"gender":"female","occupationNum":3929}
+			    ]
+			},
+			{
+			    "name":"Somerset County, Maine",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1056},
+			        {"gender":"female","occupationNum":1009}
+			    ]
+			},
+			{
+			    "name":"Lincoln County, Maine",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1198},
+			        {"gender":"female","occupationNum":1129}
+			    ]
+			},
+			{
+			    "name":"Penobscot County, Maine",
+			    "occupation":[
+			        {"gender":"male","occupationNum":4377},
+			        {"gender":"female","occupationNum":3463}
+			    ]
+			},
+			{
+			    "name":"Hancock County, Maine",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1625},
+			        {"gender":"female","occupationNum":2058}
+			    ]
+			},
+			{
+			    "name":"Oxford County, Maine",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1039},
+			        {"gender":"female","occupationNum":1342}
+			    ]
+			},
+			{
+			    "name":"Cumberland County, Maine",
+			    "occupation":[
+			        {"gender":"male","occupationNum":13187},
+			        {"gender":"female","occupationNum":12065}
+			    ]
+			},
+			{
+			    "name":"Franklin County, Maine",
+			    "occupation":[
+			        {"gender":"male","occupationNum":979},
+			        {"gender":"female","occupationNum":582}
+			    ]
+			},
+			{
+			    "name":"Washington County, Maine",
+			    "occupation":[
+			        {"gender":"male","occupationNum":684},
+			        {"gender":"female","occupationNum":763}
+			    ]
+			},
+			{
+			    "name":"York County, Maine",
+			    "occupation":[
+			        {"gender":"male","occupationNum":7641},
+			        {"gender":"female","occupationNum":6182}
+			    ]
+			},
+			{
+			    "name":"Sagadahoc County, Maine",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1080},
+			        {"gender":"female","occupationNum":912}
+			    ]
+			},
+			{
+			    "name":"Piscataquis County, Maine",
+			    "occupation":[
+			        {"gender":"male","occupationNum":297},
+			        {"gender":"female","occupationNum":346}
+			    ]
+			},
+			{
+			    "name":"Waldo County, Maine",
+			    "occupation":[
+			        {"gender":"male","occupationNum":983},
+			        {"gender":"female","occupationNum":1159}
+			    ]
+			}
+		]
+	},
+	{
+		"name":"NH",
+		"population":849000,
+		"counties":[
+			{
+			    "name":"Cheshire County, New Hampshire",
+			    "occupation":[
+			        {"gender":"male","occupationNum":2720},
+			        {"gender":"female","occupationNum":2253}
+			    ]
+			},
+			{
+			    "name":"Merrimack County, New Hampshire",
+			    "occupation":[
+			        {"gender":"male","occupationNum":6280},
+			        {"gender":"female","occupationNum":5473}
+			    ]
+			},
+			{
+			    "name":"Rockingham County, New Hampshire",
+			    "occupation":[
+			        {"gender":"male","occupationNum":16647},
+			        {"gender":"female","occupationNum":12118}
+			    ]
+			},
+			{
+			    "name":"Belknap County, New Hampshire",
+			    "occupation":[
+			        {"gender":"male","occupationNum":2218},
+			        {"gender":"female","occupationNum":1906}
+			    ]
+			},
+			{
+			    "name":"Hillsborough County, New Hampshire",
+			    "occupation":[
+			        {"gender":"male","occupationNum":19925},
+			        {"gender":"female","occupationNum":14727}
+			    ]
+			},
+			{
+			    "name":"Sullivan County, New Hampshire",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1377},
+			        {"gender":"female","occupationNum":1202}
+			    ]
+			},
+			{
+			    "name":"Grafton County, New Hampshire",
+			    "occupation":[
+			        {"gender":"male","occupationNum":3317},
+			        {"gender":"female","occupationNum":2894}
+			    ]
+			},
+			{
+			    "name":"Coos County, New Hampshire",
+			    "occupation":[
+			        {"gender":"male","occupationNum":961},
+			        {"gender":"female","occupationNum":856}
+			    ]
+			},
+			{
+			    "name":"Carroll County, New Hampshire",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1491},
+			        {"gender":"female","occupationNum":1353}
+			    ]
+			},
+			{
+			    "name":"Strafford County, New Hampshire",
+			    "occupation":[
+			        {"gender":"male","occupationNum":4646},
+			        {"gender":"female","occupationNum":4126}
+			    ]
+			}
+		]
+	},
+	{
+		"name":"NJ",
+		"population":8724560,
+		"counties":[
+			{
+			    "name":"Middlesex County, New Jersey",
+			    "occupation":[
+			        {"gender":"male","occupationNum":40413},
+			        {"gender":"female","occupationNum":28967}
+			    ]
+			},
+			{
+			    "name":"Somerset County, New Jersey",
+			    "occupation":[
+			        {"gender":"male","occupationNum":21940},
+			        {"gender":"female","occupationNum":15304}
+			    ]
+			},
+			{
+			    "name":"Union County, New Jersey",
+			    "occupation":[
+			        {"gender":"male","occupationNum":23180},
+			        {"gender":"female","occupationNum":17148}
+			    ]
+			},
+			{
+			    "name":"Monmouth County, New Jersey",
+			    "occupation":[
+			        {"gender":"male","occupationNum":35710},
+			        {"gender":"female","occupationNum":21969}
+			    ]
+			},
+			{
+			    "name":"Hunterdon County, New Jersey",
+			    "occupation":[
+			        {"gender":"male","occupationNum":8411},
+			        {"gender":"female","occupationNum":6638}
+			    ]
+			},
+			{
+			    "name":"Cape May County, New Jersey",
+			    "occupation":[
+			        {"gender":"male","occupationNum":3134},
+			        {"gender":"female","occupationNum":2498}
+			    ]
+			},
+			{
+			    "name":"Burlington County, New Jersey",
+			    "occupation":[
+			        {"gender":"male","occupationNum":21547},
+			        {"gender":"female","occupationNum":16147}
+			    ]
+			},
+			{
+			    "name":"Sussex County, New Jersey",
+			    "occupation":[
+			        {"gender":"male","occupationNum":7559},
+			        {"gender":"female","occupationNum":5258}
+			    ]
+			},
+			{
+			    "name":"Essex County, New Jersey",
+			    "occupation":[
+			        {"gender":"male","occupationNum":28054},
+			        {"gender":"female","occupationNum":23966}
+			    ]
+			},
+			{
+			    "name":"Hudson County, New Jersey",
+			    "occupation":[
+			        {"gender":"male","occupationNum":30313},
+			        {"gender":"female","occupationNum":25374}
+			    ]
+			},
+			{
+			    "name":"Salem County, New Jersey",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1838},
+			        {"gender":"female","occupationNum":1596}
+			    ]
+			},
+			{
+			    "name":"Camden County, New Jersey",
+			    "occupation":[
+			        {"gender":"male","occupationNum":19435},
+			        {"gender":"female","occupationNum":14580}
+			    ]
+			},
+			{
+			    "name":"Atlantic County, New Jersey",
+			    "occupation":[
+			        {"gender":"male","occupationNum":7721},
+			        {"gender":"female","occupationNum":6001}
+			    ]
+			},
+			{
+			    "name":"Ocean County, New Jersey",
+			    "occupation":[
+			        {"gender":"male","occupationNum":18975},
+			        {"gender":"female","occupationNum":14156}
+			    ]
+			},
+			{
+			    "name":"Morris County, New Jersey",
+			    "occupation":[
+			        {"gender":"male","occupationNum":34300},
+			        {"gender":"female","occupationNum":23158}
+			    ]
+			},
+			{
+			    "name":"Bergen County, New Jersey",
+			    "occupation":[
+			        {"gender":"male","occupationNum":53529},
+			        {"gender":"female","occupationNum":36523}
+			    ]
+			},
+			{
+			    "name":"Gloucester County, New Jersey",
+			    "occupation":[
+			        {"gender":"male","occupationNum":13939},
+			        {"gender":"female","occupationNum":9603}
+			    ]
+			},
+			{
+			    "name":"Cumberland County, New Jersey",
+			    "occupation":[
+			        {"gender":"male","occupationNum":2839},
+			        {"gender":"female","occupationNum":2291}
+			    ]
+			},
+			{
+			    "name":"Warren County, New Jersey",
+			    "occupation":[
+			        {"gender":"male","occupationNum":4832},
+			        {"gender":"female","occupationNum":3178}
+			    ]
+			},
+			{
+			    "name":"Mercer County, New Jersey",
+			    "occupation":[
+			        {"gender":"male","occupationNum":17483},
+			        {"gender":"female","occupationNum":14114}
+			    ]
+			},
+			{
+			    "name":"Passaic County, New Jersey",
+			    "occupation":[
+			        {"gender":"male","occupationNum":16950},
+			        {"gender":"female","occupationNum":11778}
+			    ]
+			}
+		]
+	},
+	{
+		"name":"NY",
+		"population":8336697,
+		"counties":[
+			{
+			    "name":"Yates County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":992},
+			        {"gender":"female","occupationNum":613}
+			    ]
+			},
+			{
+			    "name":"Cortland County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1499},
+			        {"gender":"female","occupationNum":1080}
+			    ]
+			},
+			{
+			    "name":"Broome County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":5075},
+			        {"gender":"female","occupationNum":4437}
+			    ]
+			},
+			{
+			    "name":"Montgomery County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1548},
+			        {"gender":"female","occupationNum":1088}
+			    ]
+			},
+			{
+			    "name":"St. Lawrence County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":2639},
+			        {"gender":"female","occupationNum":2058}
+			    ]
+			},
+			{
+			    "name":"Herkimer County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1988},
+			        {"gender":"female","occupationNum":1477}
+			    ]
+			},
+			{
+			    "name":"Franklin County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1119},
+			        {"gender":"female","occupationNum":836}
+			    ]
+			},
+			{
+			    "name":"Queens County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":69986},
+			        {"gender":"female","occupationNum":62715}
+			    ]
+			},
+			{
+			    "name":"Albany County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":12337},
+			        {"gender":"female","occupationNum":11634}
+			    ]
+			},
+			{
+			    "name":"Washington County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1547},
+			        {"gender":"female","occupationNum":1427}
+			    ]
+			},
+			{
+			    "name":"Wyoming County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1227},
+			        {"gender":"female","occupationNum":843}
+			    ]
+			},
+			{
+			    "name":"Ontario County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":4348},
+			        {"gender":"female","occupationNum":3209}
+			    ]
+			},
+			{
+			    "name":"Wayne County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":2902},
+			        {"gender":"female","occupationNum":2249}
+			    ]
+			},
+			{
+			    "name":"Cayuga County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":2543},
+			        {"gender":"female","occupationNum":1846}
+			    ]
+			},
+			{
+			    "name":"Tompkins County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":3422},
+			        {"gender":"female","occupationNum":3460}
+			    ]
+			},
+			{
+			    "name":"Hamilton County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":261},
+			        {"gender":"female","occupationNum":68}
+			    ]
+			},
+			{
+			    "name":"Ulster County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":5838},
+			        {"gender":"female","occupationNum":4879}
+			    ]
+			},
+			{
+			    "name":"Schenectady County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":4987},
+			        {"gender":"female","occupationNum":4993}
+			    ]
+			},
+			{
+			    "name":"Westchester County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":51204},
+			        {"gender":"female","occupationNum":35011}
+			    ]
+			},
+			{
+			    "name":"Warren County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":2333},
+			        {"gender":"female","occupationNum":1797}
+			    ]
+			},
+			{
+			    "name":"Clinton County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":2348},
+			        {"gender":"female","occupationNum":1497}
+			    ]
+			},
+			{
+			    "name":"Essex County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1113},
+			        {"gender":"female","occupationNum":890}
+			    ]
+			},
+			{
+			    "name":"Rensselaer County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":5584},
+			        {"gender":"female","occupationNum":5573}
+			    ]
+			},
+			{
+			    "name":"Orleans County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1066},
+			        {"gender":"female","occupationNum":802}
+			    ]
+			},
+			{
+			    "name":"Seneca County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1015},
+			        {"gender":"female","occupationNum":857}
+			    ]
+			},
+			{
+			    "name":"Tioga County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1550},
+			        {"gender":"female","occupationNum":1326}
+			    ]
+			},
+			{
+			    "name":"Otsego County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1816},
+			        {"gender":"female","occupationNum":1860}
+			    ]
+			},
+			{
+			    "name":"Fulton County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1247},
+			        {"gender":"female","occupationNum":1093}
+			    ]
+			},
+			{
+			    "name":"Orange County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":12225},
+			        {"gender":"female","occupationNum":9657}
+			    ]
+			},
+			{
+			    "name":"Bronx County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":20756},
+			        {"gender":"female","occupationNum":22730}
+			    ]
+			},
+			{
+			    "name":"Nassau County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":67480},
+			        {"gender":"female","occupationNum":43527}
+			    ]
+			},
+			{
+			    "name":"Erie County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":32312},
+			        {"gender":"female","occupationNum":26834}
+			    ]
+			},
+			{
+			    "name":"Cattaraugus County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1947},
+			        {"gender":"female","occupationNum":1685}
+			    ]
+			},
+			{
+			    "name":"Genesee County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1945},
+			        {"gender":"female","occupationNum":1308}
+			    ]
+			},
+			{
+			    "name":"Allegany County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1081},
+			        {"gender":"female","occupationNum":710}
+			    ]
+			},
+			{
+			    "name":"Monroe County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":29070},
+			        {"gender":"female","occupationNum":22541}
+			    ]
+			},
+			{
+			    "name":"Chemung County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":2201},
+			        {"gender":"female","occupationNum":1945}
+			    ]
+			},
+			{
+			    "name":"Onondaga County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":16962},
+			        {"gender":"female","occupationNum":14312}
+			    ]
+			},
+			{
+			    "name":"Delaware County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1334},
+			        {"gender":"female","occupationNum":865}
+			    ]
+			},
+			{
+			    "name":"Rockland County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":12901},
+			        {"gender":"female","occupationNum":8821}
+			    ]
+			},
+			{
+			    "name":"Saratoga County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":10600},
+			        {"gender":"female","occupationNum":8425}
+			    ]
+			},
+			{
+			    "name":"Putnam County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":4618},
+			        {"gender":"female","occupationNum":3484}
+			    ]
+			},
+			{
+			    "name":"Niagara County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":5987},
+			        {"gender":"female","occupationNum":5810}
+			    ]
+			},
+			{
+			    "name":"Oswego County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":2685},
+			        {"gender":"female","occupationNum":2445}
+			    ]
+			},
+			{
+			    "name":"Jefferson County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":2851},
+			        {"gender":"female","occupationNum":2211}
+			    ]
+			},
+			{
+			    "name":"Richmond County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":16715},
+			        {"gender":"female","occupationNum":11580}
+			    ]
+			},
+			{
+			    "name":"Greene County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1269},
+			        {"gender":"female","occupationNum":1223}
+			    ]
+			},
+			{
+			    "name":"Dutchess County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":12224},
+			        {"gender":"female","occupationNum":8610}
+			    ]
+			},
+			{
+			    "name":"Suffolk County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":61485},
+			        {"gender":"female","occupationNum":44158}
+			    ]
+			},
+			{
+			    "name":"Chautauqua County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":3188},
+			        {"gender":"female","occupationNum":2760}
+			    ]
+			},
+			{
+			    "name":"Livingston County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":2032},
+			        {"gender":"female","occupationNum":1617}
+			    ]
+			},
+			{
+			    "name":"Steuben County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":2873},
+			        {"gender":"female","occupationNum":2524}
+			    ]
+			},
+			{
+			    "name":"Chenango County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1579},
+			        {"gender":"female","occupationNum":1171}
+			    ]
+			},
+			{
+			    "name":"Lewis County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":780},
+			        {"gender":"female","occupationNum":539}
+			    ]
+			},
+			{
+			    "name":"Oneida County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":7219},
+			        {"gender":"female","occupationNum":6029}
+			    ]
+			},
+			{
+			    "name":"Schoharie County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1074},
+			        {"gender":"female","occupationNum":939}
+			    ]
+			},
+			{
+			    "name":"Kings County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":74649},
+			        {"gender":"female","occupationNum":67879}
+			    ]
+			},
+			{
+			    "name":"Schuyler County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":602},
+			        {"gender":"female","occupationNum":442}
+			    ]
+			},
+			{
+			    "name":"Madison County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":2430},
+			        {"gender":"female","occupationNum":2529}
+			    ]
+			},
+			{
+			    "name":"Sullivan County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1627},
+			        {"gender":"female","occupationNum":1591}
+			    ]
+			},
+			{
+			    "name":"New York County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":120476},
+			        {"gender":"female","occupationNum":102726}
+			    ]
+			},
+			{
+			    "name":"Columbia County, New York",
+			    "occupation":[
+			        {"gender":"male","occupationNum":2453},
+			        {"gender":"female","occupationNum":2120}
+			    ]
+			}
+		]
+	},
+	{
+		"name":"PA",
+		"population":12802503,
+		"counties":[
+			{
+			    "name":"Jefferson County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1069},
+			        {"gender":"female","occupationNum":754}
+			    ]
+			},
+			{
+			    "name":"Somerset County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1959},
+			        {"gender":"female","occupationNum":1306}
+			    ]
+			},
+			{
+			    "name":"Potter County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":357},
+			        {"gender":"female","occupationNum":355}
+			    ]
+			},
+			{
+			    "name":"Snyder County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1224},
+			        {"gender":"female","occupationNum":461}
+			    ]
+			},
+			{
+			    "name":"Wyoming County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":723},
+			        {"gender":"female","occupationNum":594}
+			    ]
+			},
+			{
+			    "name":"Berks County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":13752},
+			        {"gender":"female","occupationNum":10474}
+			    ]
+			},
+			{
+			    "name":"Mercer County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":2584},
+			        {"gender":"female","occupationNum":2061}
+			    ]
+			},
+			{
+			    "name":"Fayette County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":2489},
+			        {"gender":"female","occupationNum":2179}
+			    ]
+			},
+			{
+			    "name":"Clarion County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":811},
+			        {"gender":"female","occupationNum":753}
+			    ]
+			},
+			{
+			    "name":"Forest County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":76},
+			        {"gender":"female","occupationNum":98}
+			    ]
+			},
+			{
+			    "name":"McKean County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1077},
+			        {"gender":"female","occupationNum":923}
+			    ]
+			},
+			{
+			    "name":"Sullivan County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":120},
+			        {"gender":"female","occupationNum":101}
+			    ]
+			},
+			{
+			    "name":"Columbia County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1796},
+			        {"gender":"female","occupationNum":1243}
+			    ]
+			},
+			{
+			    "name":"Lancaster County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":21028},
+			        {"gender":"female","occupationNum":12605}
+			    ]
+			},
+			{
+			    "name":"Schuylkill County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":3575},
+			        {"gender":"female","occupationNum":2655}
+			    ]
+			},
+			{
+			    "name":"Delaware County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":24339},
+			        {"gender":"female","occupationNum":18795}
+			    ]
+			},
+			{
+			    "name":"Montgomery County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":45874},
+			        {"gender":"female","occupationNum":34521}
+			    ]
+			},
+			{
+			    "name":"Beaver County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":4780},
+			        {"gender":"female","occupationNum":4380}
+			    ]
+			},
+			{
+			    "name":"Fulton County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":397},
+			        {"gender":"female","occupationNum":217}
+			    ]
+			},
+			{
+			    "name":"Mifflin County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1044},
+			        {"gender":"female","occupationNum":592}
+			    ]
+			},
+			{
+			    "name":"Clinton County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":785},
+			        {"gender":"female","occupationNum":764}
+			    ]
+			},
+			{
+			    "name":"Union County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":993},
+			        {"gender":"female","occupationNum":771}
+			    ]
+			},
+			{
+			    "name":"Lebanon County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":4668},
+			        {"gender":"female","occupationNum":2935}
+			    ]
+			},
+			{
+			    "name":"Wayne County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1308},
+			        {"gender":"female","occupationNum":1050}
+			    ]
+			},
+			{
+			    "name":"Bucks County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":34733},
+			        {"gender":"female","occupationNum":22553}
+			    ]
+			},
+			{
+			    "name":"Lawrence County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":2196},
+			        {"gender":"female","occupationNum":1549}
+			    ]
+			},
+			{
+			    "name":"Erie County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":8283},
+			        {"gender":"female","occupationNum":6758}
+			    ]
+			},
+			{
+			    "name":"Armstrong County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1468},
+			        {"gender":"female","occupationNum":1127}
+			    ]
+			},
+			{
+			    "name":"Warren County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1354},
+			        {"gender":"female","occupationNum":897}
+			    ]
+			},
+			{
+			    "name":"Northumberland County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1986},
+			        {"gender":"female","occupationNum":1320}
+			    ]
+			},
+			{
+			    "name":"Bradford County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1587},
+			        {"gender":"female","occupationNum":1211}
+			    ]
+			},
+			{
+			    "name":"Susquehanna County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1305},
+			        {"gender":"female","occupationNum":854}
+			    ]
+			},
+			{
+			    "name":"Pike County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1608},
+			        {"gender":"female","occupationNum":1459}
+			    ]
+			},
+			{
+			    "name":"Washington County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":7930},
+			        {"gender":"female","occupationNum":5991}
+			    ]
+			},
+			{
+			    "name":"Crawford County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":2311},
+			        {"gender":"female","occupationNum":1643}
+			    ]
+			},
+			{
+			    "name":"Venango County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1340},
+			        {"gender":"female","occupationNum":882}
+			    ]
+			},
+			{
+			    "name":"Elk County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":668},
+			        {"gender":"female","occupationNum":520}
+			    ]
+			},
+			{
+			    "name":"Centre County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":5678},
+			        {"gender":"female","occupationNum":3683}
+			    ]
+			},
+			{
+			    "name":"Perry County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1453},
+			        {"gender":"female","occupationNum":1370}
+			    ]
+			},
+			{
+			    "name":"Montour County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":457},
+			        {"gender":"female","occupationNum":463}
+			    ]
+			},
+			{
+			    "name":"Lycoming County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":3221},
+			        {"gender":"female","occupationNum":2248}
+			    ]
+			},
+			{
+			    "name":"York County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":15614},
+			        {"gender":"female","occupationNum":11849}
+			    ]
+			},
+			{
+			    "name":"Lackawanna County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":6651},
+			        {"gender":"female","occupationNum":4720}
+			    ]
+			},
+			{
+			    "name":"Lehigh County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":12280},
+			        {"gender":"female","occupationNum":8572}
+			    ]
+			},
+			{
+			    "name":"Northampton County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":11138},
+			        {"gender":"female","occupationNum":7983}
+			    ]
+			},
+			{
+			    "name":"Butler County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":8174},
+			        {"gender":"female","occupationNum":6073}
+			    ]
+			},
+			{
+			    "name":"Bedford County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1429},
+			        {"gender":"female","occupationNum":895}
+			    ]
+			},
+			{
+			    "name":"Clearfield County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1716},
+			        {"gender":"female","occupationNum":1441}
+			    ]
+			},
+			{
+			    "name":"Cameron County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":165},
+			        {"gender":"female","occupationNum":96}
+			    ]
+			},
+			{
+			    "name":"Franklin County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":5571},
+			        {"gender":"female","occupationNum":3246}
+			    ]
+			},
+			{
+			    "name":"Adams County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":3262},
+			        {"gender":"female","occupationNum":2545}
+			    ]
+			},
+			{
+			    "name":"Greene County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":686},
+			        {"gender":"female","occupationNum":663}
+			    ]
+			},
+			{
+			    "name":"Allegheny County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":55481},
+			        {"gender":"female","occupationNum":43077}
+			    ]
+			},
+			{
+			    "name":"Indiana County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":2390},
+			        {"gender":"female","occupationNum":1580}
+			    ]
+			},
+			{
+			    "name":"Huntingdon County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":917},
+			        {"gender":"female","occupationNum":756}
+			    ]
+			},
+			{
+			    "name":"Carbon County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1493},
+			        {"gender":"female","occupationNum":1021}
+			    ]
+			},
+			{
+			    "name":"Chester County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":33257},
+			        {"gender":"female","occupationNum":22680}
+			    ]
+			},
+			{
+			    "name":"Monroe County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":5043},
+			        {"gender":"female","occupationNum":4219}
+			    ]
+			},
+			{
+			    "name":"Westmoreland County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":13068},
+			        {"gender":"female","occupationNum":9275}
+			    ]
+			},
+			{
+			    "name":"Cambria County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":3317},
+			        {"gender":"female","occupationNum":2816}
+			    ]
+			},
+			{
+			    "name":"Blair County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":3404},
+			        {"gender":"female","occupationNum":2622}
+			    ]
+			},
+			{
+			    "name":"Juniata County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":692},
+			        {"gender":"female","occupationNum":472}
+			    ]
+			},
+			{
+			    "name":"Tioga County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1265},
+			        {"gender":"female","occupationNum":832}
+			    ]
+			},
+			{
+			    "name":"Cumberland County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":10736},
+			        {"gender":"female","occupationNum":7968}
+			    ]
+			},
+			{
+			    "name":"Dauphin County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":10194},
+			        {"gender":"female","occupationNum":9593}
+			    ]
+			},
+			{
+			    "name":"Luzerne County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":9712},
+			        {"gender":"female","occupationNum":7069}
+			    ]
+			},
+			{
+			    "name":"Philadelphia County, Pennsylvania",
+			    "occupation":[
+			        {"gender":"male","occupationNum":36082},
+			        {"gender":"female","occupationNum":38441}
+			    ]
+			}
+		]
+	},
+	{
+		"name":"RI",
+		"population":1048319,
+		"counties":[
+			{
+			    "name":"Kent County, Rhode Island",
+			    "occupation":[
+			        {"gender":"male","occupationNum":6274},
+			        {"gender":"female","occupationNum":5891}
+			    ]
+			},
+			{
+			    "name":"Newport County, Rhode Island",
+			    "occupation":[
+			        {"gender":"male","occupationNum":3426},
+			        {"gender":"female","occupationNum":3053}
+			    ]
+			},
+			{
+			    "name":"Washington County, Rhode Island",
+			    "occupation":[
+			        {"gender":"male","occupationNum":6036},
+			        {"gender":"female","occupationNum":4971}
+			    ]
+			},
+			{
+			    "name":"Providence County, Rhode Island",
+			    "occupation":[
+			        {"gender":"male","occupationNum":17804},
+			        {"gender":"female","occupationNum":16237}
+			    ]
+			},
+			{
+			    "name":"Bristol County, Rhode Island",
+			    "occupation":[
+			        {"gender":"male","occupationNum":2110},
+			        {"gender":"female","occupationNum":2071}
+			    ]
+			}
+		]
+	},
+	{
+		"name":"VT",
+		"population":626042,
+		"counties":[
+			{
+			    "name":"Bennington County, Vermont",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1230},
+			        {"gender":"female","occupationNum":1239}
+			    ]
+			},
+			{
+			    "name":"Windsor County, Vermont",
+			    "occupation":[
+			        {"gender":"male","occupationNum":2076},
+			        {"gender":"female","occupationNum":1871}
+			    ]
+			},
+			{
+			    "name":"Orange County, Vermont",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1151},
+			        {"gender":"female","occupationNum":913}
+			    ]
+			},
+			{
+			    "name":"Orleans County, Vermont",
+			    "occupation":[
+			        {"gender":"male","occupationNum":810},
+			        {"gender":"female","occupationNum":669}
+			    ]
+			},
+			{
+			    "name":"Caledonia County, Vermont",
+			    "occupation":[
+			        {"gender":"male","occupationNum":907},
+			        {"gender":"female","occupationNum":889}
+			    ]
+			},
+			{
+			    "name":"Essex County, Vermont",
+			    "occupation":[
+			        {"gender":"male","occupationNum":165},
+			        {"gender":"female","occupationNum":125}
+			    ]
+			},
+			{
+			    "name":"Franklin County, Vermont",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1748},
+			        {"gender":"female","occupationNum":1366}
+			    ]
+			},
+			{
+			    "name":"Lamoille County, Vermont",
+			    "occupation":[
+			        {"gender":"male","occupationNum":997},
+			        {"gender":"female","occupationNum":861}
+			    ]
+			},
+			{
+			    "name":"Grand Isle County, Vermont",
+			    "occupation":[
+			        {"gender":"male","occupationNum":397},
+			        {"gender":"female","occupationNum":249}
+			    ]
+			},
+			{
+			    "name":"Addison County, Vermont",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1843},
+			        {"gender":"female","occupationNum":1372}
+			    ]
+			},
+			{
+			    "name":"Rutland County, Vermont",
+			    "occupation":[
+			        {"gender":"male","occupationNum":2009},
+			        {"gender":"female","occupationNum":1639}
+			    ]
+			},
+			{
+			    "name":"Windham County, Vermont",
+			    "occupation":[
+			        {"gender":"male","occupationNum":1798},
+			        {"gender":"female","occupationNum":1651}
+			    ]
+			},
+			{
+			    "name":"Washington County, Vermont",
+			    "occupation":[
+			        {"gender":"male","occupationNum":2555},
+			        {"gender":"female","occupationNum":2722}
+			    ]
+			},
+			{
+			    "name":"Chittenden County, Vermont",
+			    "occupation":[
+			        {"gender":"male","occupationNum":7848},
+			        {"gender":"female","occupationNum":6905}
+			    ]
+			}
+		]
+	}
+]

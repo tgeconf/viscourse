@@ -1,0 +1,453 @@
+[
+	{
+		"name":"CT",
+		"population":3590886,
+		"counties":[
+			{
+				"name" : "c1",
+				"occupation" : [
+					{"gender":"male","occupationNum":123},
+					{"gender":"female","occupationNum":43}
+				]
+			},
+			{
+				"name" : "c2",
+				"occupation" : [
+					{"gender":"male","occupationNum":542},
+					{"gender":"female","occupationNum":432}
+				]
+			},
+			{
+				"name" : "c3",
+				"occupation" : [
+					{"gender":"male","occupationNum":432},
+					{"gender":"female","occupationNum":546}
+				]
+			},
+			{
+				"name" : "c4",
+				"occupation" : [
+					{"gender":"male","occupationNum":432},
+					{"gender":"female","occupationNum":321}
+				]
+			},
+			{
+				"name" : "c5",
+				"occupation" : [
+					{"gender":"male","occupationNum":546},
+					{"gender":"female","occupationNum":547}
+				]
+			}
+		]
+	},
+	{
+		"name":"DE",
+		"population":945934,
+		"counties":[
+			{
+				"name" : "c1",
+				"occupation" : [
+					{"gender":"male","occupationNum":239},
+					{"gender":"female","occupationNum":472}
+				]
+			},
+			{
+				"name" : "c2",
+				"occupation" : [
+					{"gender":"male","occupationNum":436},
+					{"gender":"female","occupationNum":772}
+				]
+			},
+			{
+				"name" : "c3",
+				"occupation" : [
+					{"gender":"male","occupationNum":436},
+					{"gender":"female","occupationNum":236}
+				]
+			},
+			{
+				"name" : "c4",
+				"occupation" : [
+					{"gender":"male","occupationNum":483},
+					{"gender":"female","occupationNum":426}
+				]
+			},
+			{
+				"name" : "c5",
+				"occupation" : [
+					{"gender":"male","occupationNum":127},
+					{"gender":"female","occupationNum":216}
+				]
+			}
+		]
+	},
+	{
+		"name":"MA",
+		"population":6640000,
+		"counties":[
+			{
+				"name" : "c1",
+				"occupation" : [
+					{"gender":"male","occupationNum":126},
+					{"gender":"female","occupationNum":436}
+				]
+			},
+			{
+				"name" : "c2",
+				"occupation" : [
+					{"gender":"male","occupationNum":769},
+					{"gender":"female","occupationNum":764}
+				]
+			},
+			{
+				"name" : "c3",
+				"occupation" : [
+					{"gender":"male","occupationNum":356},
+					{"gender":"female","occupationNum":235}
+				]
+			},
+			{
+				"name" : "c4",
+				"occupation" : [
+					{"gender":"male","occupationNum":657},
+					{"gender":"female","occupationNum":870}
+				]
+			},
+			{
+				"name" : "c5",
+				"occupation" : [
+					{"gender":"male","occupationNum":985},
+					{"gender":"female","occupationNum":765}
+				]
+			}
+		]
+	},
+	{
+		"name":"MD",
+		"population":5773000,
+		"counties":[
+			{
+				"name" : "c1",
+				"occupation" : [
+					{"gender":"male","occupationNum":765},
+					{"gender":"female","occupationNum":543}
+				]
+			},
+			{
+				"name" : "c2",
+				"occupation" : [
+					{"gender":"male","occupationNum":658},
+					{"gender":"female","occupationNum":436}
+				]
+			},
+			{
+				"name" : "c3",
+				"occupation" : [
+					{"gender":"male","occupationNum":543},
+					{"gender":"female","occupationNum":754}
+				]
+			},
+			{
+				"name" : "c4",
+				"occupation" : [
+					{"gender":"male","occupationNum":867},
+					{"gender":"female","occupationNum":874}
+				]
+			},
+			{
+				"name" : "c5",
+				"occupation" : [
+					{"gender":"male","occupationNum":246},
+					{"gender":"female","occupationNum":234}
+				]
+			}
+		]
+	},
+	{
+		"name":"ME",
+		"population":1270000,
+		"counties":[
+			{
+				"name" : "c1",
+				"occupation" : [
+					{"gender":"male","occupationNum":432},
+					{"gender":"female","occupationNum":547}
+				]
+			},
+			{
+				"name" : "c2",
+				"occupation" : [
+					{"gender":"male","occupationNum":653},
+					{"gender":"female","occupationNum":769}
+				]
+			},
+			{
+				"name" : "c3",
+				"occupation" : [
+					{"gender":"male","occupationNum":764},
+					{"gender":"female","occupationNum":896}
+				]
+			},
+			{
+				"name" : "c4",
+				"occupation" : [
+					{"gender":"male","occupationNum":453},
+					{"gender":"female","occupationNum":456}
+				]
+			},
+			{
+				"name" : "c5",
+				"occupation" : [
+					{"gender":"male","occupationNum":763},
+					{"gender":"female","occupationNum":543}
+				]
+			}
+		]
+	},
+	{
+		"name":"NH",
+		"population":849000,
+		"counties":[
+			{
+				"name" : "c1",
+				"occupation" : [
+					{"gender":"male","occupationNum":542},
+					{"gender":"female","occupationNum":134}
+				]
+			},
+			{
+				"name" : "c2",
+				"occupation" : [
+					{"gender":"male","occupationNum":437},
+					{"gender":"female","occupationNum":547}
+				]
+			},
+			{
+				"name" : "c3",
+				"occupation" : [
+					{"gender":"male","occupationNum":658},
+					{"gender":"female","occupationNum":542}
+				]
+			},
+			{
+				"name" : "c4",
+				"occupation" : [
+					{"gender":"male","occupationNum":547},
+					{"gender":"female","occupationNum":567}
+				]
+			},
+			{
+				"name" : "c5",
+				"occupation" : [
+					{"gender":"male","occupationNum":789},
+					{"gender":"female","occupationNum":754}
+				]
+			}
+		]
+	},
+	{
+		"name":"NJ",
+		"population":8724560,
+		"counties":[
+			{
+				"name" : "c1",
+				"occupation" : [
+					{"gender":"male","occupationNum":542},
+					{"gender":"female","occupationNum":547}
+				]
+			},
+			{
+				"name" : "c2",
+				"occupation" : [
+					{"gender":"male","occupationNum":567},
+					{"gender":"female","occupationNum":423}
+				]
+			},
+			{
+				"name" : "c3",
+				"occupation" : [
+					{"gender":"male","occupationNum":548},
+					{"gender":"female","occupationNum":123}
+				]
+			},
+			{
+				"name" : "c4",
+				"occupation" : [
+					{"gender":"male","occupationNum":453},
+					{"gender":"female","occupationNum":437}
+				]
+			},
+			{
+				"name" : "c5",
+				"occupation" : [
+					{"gender":"male","occupationNum":653},
+					{"gender":"female","occupationNum":567}
+				]
+			}
+		]
+	},
+	{
+		"name":"NY",
+		"population":8336697,
+		"counties":[
+			{
+				"name" : "c1",
+				"occupation" : [
+					{"gender":"male","occupationNum":542},
+					{"gender":"female","occupationNum":463}
+				]
+			},
+			{
+				"name" : "c2",
+				"occupation" : [
+					{"gender":"male","occupationNum":542},
+					{"gender":"female","occupationNum":456}
+				]
+			},
+			{
+				"name" : "c3",
+				"occupation" : [
+					{"gender":"male","occupationNum":543},
+					{"gender":"female","occupationNum":658}
+				]
+			},
+			{
+				"name" : "c4",
+				"occupation" : [
+					{"gender":"male","occupationNum":765},
+					{"gender":"female","occupationNum":769}
+				]
+			},
+			{
+				"name" : "c5",
+				"occupation" : [
+					{"gender":"male","occupationNum":653},
+					{"gender":"female","occupationNum":653}
+				]
+			}
+		]
+	},
+	{
+		"name":"PA",
+		"population":12802503,
+		"counties":[
+			{
+				"name" : "c1",
+				"occupation" : [
+					{"gender":"male","occupationNum":762},
+					{"gender":"female","occupationNum":575}
+				]
+			},
+			{
+				"name" : "c2",
+				"occupation" : [
+					{"gender":"male","occupationNum":653},
+					{"gender":"female","occupationNum":548}
+				]
+			},
+			{
+				"name" : "c3",
+				"occupation" : [
+					{"gender":"male","occupationNum":658},
+					{"gender":"female","occupationNum":653}
+				]
+			},
+			{
+				"name" : "c4",
+				"occupation" : [
+					{"gender":"male","occupationNum":653},
+					{"gender":"female","occupationNum":658}
+				]
+			},
+			{
+				"name" : "c5",
+				"occupation" : [
+					{"gender":"male","occupationNum":652},
+					{"gender":"female","occupationNum":247}
+				]
+			}
+		]
+	},
+	{
+		"name":"RI",
+		"population":1048319,
+		"counties":[
+			{
+				"name" : "c1",
+				"occupation" : [
+					{"gender":"male","occupationNum":223},
+					{"gender":"female","occupationNum":464}
+				]
+			},
+			{
+				"name" : "c2",
+				"occupation" : [
+					{"gender":"male","occupationNum":346},
+					{"gender":"female","occupationNum":432}
+				]
+			},
+			{
+				"name" : "c3",
+				"occupation" : [
+					{"gender":"male","occupationNum":437},
+					{"gender":"female","occupationNum":658}
+				]
+			},
+			{
+				"name" : "c4",
+				"occupation" : [
+					{"gender":"male","occupationNum":456},
+					{"gender":"female","occupationNum":658}
+				]
+			},
+			{
+				"name" : "c5",
+				"occupation" : [
+					{"gender":"male","occupationNum":653},
+					{"gender":"female","occupationNum":548}
+				]
+			}
+		]
+	},
+	{
+		"name":"VT",
+		"population":626042,
+		"counties":[
+			{
+				"name" : "c1",
+				"occupation" : [
+					{"gender":"male","occupationNum":542},
+					{"gender":"female","occupationNum":548}
+				]
+			},
+			{
+				"name" : "c2",
+				"occupation" : [
+					{"gender":"male","occupationNum":548},
+					{"gender":"female","occupationNum":873}
+				]
+			},
+			{
+				"name" : "c3",
+				"occupation" : [
+					{"gender":"male","occupationNum":542},
+					{"gender":"female","occupationNum":446}
+				]
+			},
+			{
+				"name" : "c4",
+				"occupation" : [
+					{"gender":"male","occupationNum":547},
+					{"gender":"female","occupationNum":653}
+				]
+			},
+			{
+				"name" : "c5",
+				"occupation" : [
+					{"gender":"male","occupationNum":543},
+					{"gender":"female","occupationNum":234}
+				]
+			}
+		]
+	}
+]
