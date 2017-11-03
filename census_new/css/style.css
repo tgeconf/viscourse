@@ -54,7 +54,8 @@ h1{
 h4{
 	font-size: 2em ! important;
 	font-family: "CaviarDreams";
-	margin-bottom: 1.2em;
+	margin: 0 0 0.5em 0;
+    line-height: 1.1em;
 }
 hr{
 	width: 80%;
@@ -114,7 +115,7 @@ select {
 	padding-left: 5%;
 	height: 400px;
 	font-family: "arial";
-	font-size: 1.5em;
+	font-size: 2.5em;
 	line-height: 1.6em;
 	font-weight: normal;
 	/*border-left: 1px solid #999;*/
